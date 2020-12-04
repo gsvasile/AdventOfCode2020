@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace AdventOfCode2020
 {
-    class ProgramDay3
+    public class ProgramDay3
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Advent Of Code Day 3!");
 
@@ -54,7 +54,7 @@ namespace AdventOfCode2020
         /// <param name="numberOfSpacesToMoveRight">The number of spaces to 'move' to the right.</param>
         /// <param name="numberOfSpacesToMoveDown">The number of spaces to 'move' down.</param>
         /// <returns>The number of trees that were encountered while moving down the slope</returns>
-        static double GetNumberOfTreesEncountered(IList<string> input, int numberOfSpacesToMoveRight, int numberOfSpacesToMoveDown)
+        private static double GetNumberOfTreesEncountered(IList<string> input, int numberOfSpacesToMoveRight, int numberOfSpacesToMoveDown)
         {
             double numOfTreesEncountered = 0;
             var spacesMovedRight = numberOfSpacesToMoveRight;
